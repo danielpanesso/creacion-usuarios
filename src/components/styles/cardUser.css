@@ -1,0 +1,101 @@
+.card-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-user
+{
+    border: solid  1.5px #cfcbcb;
+    border-radius: 4px;
+    padding: 30px;
+    margin: 20px;
+    width: 90%;
+}
+.card-name
+{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card-info
+{
+    list-style: none;
+}
+article hr
+{
+    border-top: 1.5px solid rgb(225, 223, 223);
+    width: 100%;
+}
+.card-email
+{
+    text-transform: uppercase;
+    color: rgb(170, 170, 170);
+}
+.card-birthday
+{
+    text-transform: uppercase;
+    color: rgb(170, 170, 170);
+}
+li{
+    margin-bottom: 15px;    
+}
+span
+{
+    font-size: 1.2rem;
+}
+.card-btn-delete
+{
+    background-color: rgb(244, 7, 7);
+    color: aliceblue;
+    border-radius: 3px;
+    font-size: 40px;
+    border: 0;
+    border-color: rgb(255, 0, 0);
+}
+.card-btn-edit
+{
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 3px;
+    background-color: rgba(104, 101, 101, 0.5);
+    border: 0;
+}
+.card-btn-group
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+   body
+   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   .card-container {
+    width: 40%;
+    margin: 10px;
+}
+.card-user
+{
+    border: solid  1.5px #cfcbcb;
+    border-radius: 4px;
+    padding: 30px;
+    margin: 20px;
+    width: 100%;    
+    }
+}
+
+@media (min-width: 1024px) {
+
+   .card-container {
+     width: 33.33%;
+    }
+ }
+

@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body
+{
+  background-color: rgb(237, 237, 237);
+  color: rgb(0, 0, 0);
+  min-width: 390px;
+}
+.App
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+.app-header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 18px;
+  z-index: 999;
+}
+.app-btn
+{
+  padding: 8px;
+  background-color: #6c73ac;
+  color: rgb(255, 255, 255);
+  border-style: none;
+}
+
+@media (min-width: 768px) {
+
+  .App
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 30vh;
+  }
+  .app-header
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%  8.5%;
+  }  
+}
+
+@media screen and (min-width: 1024px) {
+  .App
+  {
+      margin: 0 auto;
+      position: relative;      
+      max-width: 1024px;
+  }
+  .app-header
+  {
+      max-width: 1024px;
+      margin: 0 auto;
+      position: relative;
+  }
+}
